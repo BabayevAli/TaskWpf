@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="370" Width="525">
+    <Grid>
+        <DockPanel LastChildFill = "True">
+            <StackPanel DockPanel.Dock = "Top"  Height="30" Orientation="Horizontal" Background="OrangeRed">
+                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" Width="400">
+                    <Button Background="Transparent" Width="40" HorizontalAlignment="Left" Margin="5">Home</Button>
+                    <Button Background="Transparent" Width="70" HorizontalAlignment="Left" Margin="5">Restaurants</Button>
+                    <Button Background="Transparent" Width="30" HorizontalAlignment="Left" Margin="5">Faq</Button>
+                    <Button Background="Transparent" Width="30" HorizontalAlignment="Left" Margin="5">Help</Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="10"></TextBlock>
+                    <TextBox  Width="80" TextAlignment="Center" HorizontalAlignment="Right" Background="White" Margin="5">Search</TextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Background="OldLace" Orientation="Vertical" DockPanel.Dock="Left" Width="130" >
+                <TextBlock  TextAlignment="Center"></TextBlock>
+                <TextBlock  TextAlignment="Center"></TextBlock>
+                <TextBlock  TextAlignment="Center"></TextBlock>
+                <TextBlock  TextAlignment="Center"></TextBlock>
+                <TextBlock  TextAlignment="Center"></TextBlock>
+                <TextBlock  TextAlignment="Center"></TextBlock>
+                <Button>WPF - Home</Button>
+                <TextBlock Height="5" TextAlignment="Center"></TextBlock>
+                <Button>WPF - Overview</Button>
+                <TextBlock Height="5" TextAlignment="Center"></TextBlock>
+
+                <Button>WPF - Environment</Button>
+                <TextBlock Height="5" TextAlignment="Center"></TextBlock>
+
+                <Button>WPF - Hello World</Button>
+                <TextBlock Height="5" TextAlignment="Center"></TextBlock>
+
+                <Button>WPF - XAML Overview</Button>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Height="20">
+                <TextBlock  TextAlignment="Center" Width="50"></TextBlock>
+                <TextBlock  TextAlignment="Center" Width="50"></TextBlock>
+                <TextBlock  TextAlignment="Center">Butun Huquqlar Qorunur</TextBlock>
+            </StackPanel>
+            <WrapPanel Orientation="Horizontal" Width="389">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Margin" Value="10,10" />
+                        <Setter Property="Padding" Value="10,10" />
+                    </Style>
+                </WrapPanel.Resources>
+                <TextBlock TextAlignment="Center" Background="Orange" Width="100" Height="120" Padding="0,50">User</TextBlock>
+                <TextBlock TextAlignment="Center" Background="Orange" Width="100" Height="120" Padding="0,50">User</TextBlock>
+                <TextBlock TextAlignment="Center" Background="Orange" Width="100" Height="120" Padding="0,50">User</TextBlock>
+                <TextBlock TextAlignment="Center" Background="Orange" Width="100" Height="120" Padding="0,50">User</TextBlock>
+                <TextBlock TextAlignment="Center" Background="Orange" Width="100" Height="120" Padding="0,50">User</TextBlock>
+                <TextBlock TextAlignment="Center" Background="Orange" Width="100" Height="120" Padding="0,50">User</TextBlock>
+            </WrapPanel>
+            <Button   />
+        </DockPanel>
+    </Grid>
+</Window>
